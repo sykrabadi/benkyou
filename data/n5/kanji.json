@@ -1,0 +1,67 @@
+[
+    {
+        "id": "kan_0001",
+        "character": "日",
+        "readings": {
+            "on": [
+                "にち",
+                "じつ"
+            ],
+            "kun": [
+                "ひ",
+                "び"
+            ]
+        },
+        "meanings": [
+            "sun",
+            "day"
+        ],
+        "jlpt_level": "N5",
+        "stroke_count": 4,
+        "examples": [
+            {
+                "word": "日本",
+                "reading": "に.ほん",
+                "meaning": "Jepang"
+            },
+            {
+                "word": "日付",
+                "reading": "ひ.づけ",
+                "meaning": "Jumlah Hari"
+            }
+        ]
+    },
+    {
+        "id": "kan_0002",
+        "character": "人",
+        "readings": {
+            "on": [
+                "ジン",
+                "ニン"
+            ],
+            "kun": [
+                "ひと",
+                "-り",
+                "-と"
+            ]
+        },
+        "meanings": [
+            "orang",
+            "manusia"
+        ],
+        "jlpt_level": "N5",
+        "stroke_count": 2,
+        "examples": [
+            {
+                "word": "人数",
+                "reading": "にん.ずう",
+                "meaning": "Jumlah Orang"
+            },
+            {
+                "word": "二人",
+                "reading": "ふた.り",
+                "meaning": "Dua Orang"
+            }
+        ]
+    }
+]

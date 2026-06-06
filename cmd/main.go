@@ -1,5 +1,33 @@
 package main
 
-func main(){
-	
+import (
+	"log"
+	"os"
+	"strings"
+
+	"benkyou/server"
+	"benkyou/service"
+)
+
+func main() {
+	kanjiDir := os.Getenv("KANJI_DIR")
+	if kanjiDir == "" {
+		log.Fatal("empty kanji dir")
+	}
+
+	kanjiSvc, err := service.NewKanjiService("../data")
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	httpPort := os.Getenv("HTTP_PORT")
+	if httpPort == "" {
+		log.Fatal("empty kanji dir")
+	}
+
+	if !strings.Contains(httpPort, ":") {
+		log.Fatal("invalid http port format")
+	}
+
+	server.RunServer(kanjiSvc, httpPort)
 }
