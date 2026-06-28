@@ -1,0 +1,29 @@
+[
+    {
+        "id": "kan_0001",
+        "character": "日",
+        "readings": {
+            "on": [
+                "にち",
+                "じつ"
+            ],
+            "kun": [
+                "ひ",
+                "び"
+            ]
+        },
+        "meanings": [
+            "sun",
+            "day"
+        ],
+        "jlpt_level": "N4",
+        "stroke_count": 4,
+        "examples": [
+            {
+                "word": "日本",
+                "reading": "にほん",
+                "meaning": "Japan"
+            }
+        ]
+    }
+]
