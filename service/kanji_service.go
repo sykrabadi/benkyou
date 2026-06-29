@@ -13,7 +13,7 @@ import (
 	"github.com/pkg/errors"
 )
 
-const totalOptions = 3
+const totalOptions = 4
 
 func NewKanjiService(
 	kanjiDir string,
@@ -43,9 +43,9 @@ func NewKanjiService(
 	}
 
 	return &Service{
-		Data: data,
+		Data:     data,
 		Examples: exampleByLevel,
-		}, nil
+	}, nil
 }
 
 func PopulateKanjiByLevel(dataDir, level string) ([]model.Kanji, []model.Examples, error) {
@@ -85,16 +85,6 @@ func PopulateKanjiByLevel(dataDir, level string) ([]model.Kanji, []model.Example
 		return []model.Kanji{}, []model.Examples{}, errors.Wrap(err, "fail decode JSON kanji file")
 	}
 
-	// for i := range data {
-	// 	for j := range data[i].Examples {
-	// 		exampleByLevel = append(exampleByLevel, model.Examples{
-	// 			Word:    data[i].Examples[j].Word,
-	// 			Reading: data[i].Examples[j].Reading,
-	// 			Meaning: data[i].Examples[j].Meaning,
-	// 		})
-	// 	}
-	// }
-
 	return data, exampleByLevel, nil
 }
 
@@ -117,32 +107,32 @@ func (s *Service) GetQuestionByLevel(level string) model.Question {
 
 	seen := make(map[string]bool)
 
-	seen[question.Reading] = true
+	seen[stripDot(question.Reading)] = true
 
 	options := make([]model.Options, 0)
 
 	options = append(options, model.Options{
-		Option: question.Reading,
+		Option: stripDot(question.Reading),
 		Answer: true,
 	})
 
 	for len(options) < totalOptions {
-		candidate := pool[:rand.IntN(len(pool))]
+		candidate := pool[rand.IntN(len(pool))]
+		reading := stripDot(candidate.Reading)
 
-		examples := candidate[:len(pool)]
-
-		for _, example := range examples {
-			reading := strings.ReplaceAll(example.Word, ".", "")
-			if !seen[reading] {
-				seen[reading] = true
-				option := model.Options{
-					Option: example.Word,
-					Answer: false,
-				}
-				options = append(options, option)
+		if !seen[reading] {
+			seen[reading] = true
+			option := model.Options{
+				Option: reading,
+				Answer: false,
 			}
+			options = append(options, option)
 		}
 	}
+
+	rand.Shuffle(len(options), func(i, j int) {
+		options[i], options[j] = options[j], options[i]
+	})
 
 	return model.Question{
 		Question: question.Word,
@@ -150,6 +140,10 @@ func (s *Service) GetQuestionByLevel(level string) model.Question {
 		Furigana: question.Reading,
 		Options:  options,
 	}
+}
+
+func stripDot(reading string) string {
+	return strings.ReplaceAll(reading, ".", "")
 }
 
 func ReadKanjiByID(
