@@ -51,32 +51,49 @@ func NewKanjiService(
 func PopulateKanjiByLevel(dataDir, level string) ([]model.Kanji, []model.Examples, error) {
 	kanjiPath := fmt.Sprintf("%s/%s/kanji.json", dataDir, level)
 
-	file, err := os.Open(kanjiPath)
+	kanjiFile, err := os.Open(kanjiPath)
 	if err != nil {
 		return []model.Kanji{}, []model.Examples{}, errors.Wrap(typeErrors.ErrFileNotFound, "fail read kanji file")
 	}
 
-	defer file.Close()
+	defer kanjiFile.Close()
 
 	data := make([]model.Kanji, 0)
 
-	exampleByLevel := make([]model.Examples, 0)
+	// exampleByLevel := make([]model.Examples, 0)
 
-	decoder := json.NewDecoder(file)
+	kanjiDecoder := json.NewDecoder(kanjiFile)
 
-	if err := decoder.Decode(&data); err != nil {
+	if err := kanjiDecoder.Decode(&data); err != nil {
 		return []model.Kanji{}, []model.Examples{}, errors.Wrap(err, "fail decode JSON kanji file")
 	}
 
-	for i := range data {
-		for j := range data[i].Examples {
-			exampleByLevel = append(exampleByLevel, model.Examples{
-				Word:    data[i].Examples[j].Word,
-				Reading: data[i].Examples[j].Reading,
-				Meaning: data[i].Examples[j].Meaning,
-			})
-		}
+	kotobaPath := fmt.Sprintf("%s/%s/kotoba.json", dataDir, level)
+
+	kotobaFile, err := os.Open(kotobaPath)
+	if err != nil {
+		return []model.Kanji{}, []model.Examples{}, errors.Wrap(typeErrors.ErrFileNotFound, "fail kotoba file")
 	}
+
+	defer kotobaFile.Close()
+
+	exampleByLevel := make([]model.Examples, 0)
+
+	kotobaDecoder := json.NewDecoder(kotobaFile)
+
+	if err := kotobaDecoder.Decode(&exampleByLevel); err != nil {
+		return []model.Kanji{}, []model.Examples{}, errors.Wrap(err, "fail decode JSON kanji file")
+	}
+
+	// for i := range data {
+	// 	for j := range data[i].Examples {
+	// 		exampleByLevel = append(exampleByLevel, model.Examples{
+	// 			Word:    data[i].Examples[j].Word,
+	// 			Reading: data[i].Examples[j].Reading,
+	// 			Meaning: data[i].Examples[j].Meaning,
+	// 		})
+	// 	}
+	// }
 
 	return data, exampleByLevel, nil
 }
