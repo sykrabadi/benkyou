@@ -15,14 +15,14 @@ func main() {
 		log.Fatal("empty kanji dir")
 	}
 
-	kanjiSvc, err := service.NewKanjiService("../data")
+	kanjiSvc, err := service.NewKanjiService(kanjiDir)
 	if err != nil {
 		log.Fatal(err)
 	}
 
 	httpPort := os.Getenv("HTTP_PORT")
 	if httpPort == "" {
-		log.Fatal("empty kanji dir")
+		log.Fatal("empty HTTP port")
 	}
 
 	if !strings.Contains(httpPort, ":") {

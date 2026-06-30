@@ -1,0 +1,62 @@
+[
+    {
+        "word": "日本",
+        "reading": "に.ほん",
+        "meaning": "Jepang"
+    },
+    {
+        "word": "日付",
+        "reading": "ひ.づけ",
+        "meaning": "Jumlah Hari"
+    },
+    {
+        "word": "人数",
+        "reading": "にん.ずう",
+        "meaning": "Jumlah Orang"
+    },
+    {
+        "word": "二人",
+        "reading": "ふた.り",
+        "meaning": "Dua Orang"
+    },
+    {
+		"word": "大きい",
+		"reading": "おお.きい",
+		"meaning": "besar"
+	},
+	{
+		"word": "小さい",
+		"reading": "ちい.さい",
+		"meaning": "kecil"
+	},
+	{
+		"word": "長い",
+		"reading": "なが.い",
+		"meaning": "panjang"
+	},
+	{
+		"word": "短い",
+		"reading": "みじ.かい",
+		"meaning": "pendek"
+	},
+	{
+		"word": "多い",
+		"reading": "おお.い",
+		"meaning": "banyak"
+	},
+	{
+		"word": "少ない",
+		"reading": "すく.ない",
+		"meaning": "sedikit"
+	},
+	{
+		"word": "太い",
+		"reading": "ふと.い",
+		"meaning": "gemuk, tebal"
+	},
+	{
+		"word": "細い",
+		"reading": "ほそ.い",
+		"meaning": "ramping, tipis"
+	}
+]
