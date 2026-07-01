@@ -208,5 +208,85 @@
 		"word": "寒い",
 		"reading": "さむい",
 		"meaning": "Dingin (suhu)"
+	},
+	{
+		"word": "暖かい",
+		"reading": "あたたかい",
+		"meaning": "Hangat (suhu) "
+	},
+	{
+		"word": "涼しい",
+		"reading": "すずしい",
+		"meaning": "Sejuk (suhu) "
+	},
+	{
+		"word": "むし暑い",
+		"reading": "むしあつい",
+		"meaning": "Panas dan lembab (suhu) "
+	},
+	{
+		"word": "甘い",
+		"reading": "あまい",
+		"meaning": "Manis"
+	},
+	{
+		"word": "辛い",
+		"reading": "からい",
+		"meaning": "Pedas"
+	},
+	{
+		"word": "すっぱい",
+		"reading": "すっぱい",
+		"meaning": "Asam"
+	},
+	{
+		"word": "塩辛い",
+		"reading": "しおからい",
+		"meaning": "Asin"
+	},
+	{
+		"word": "にがい",
+		"reading": "にがい",
+		"meaning": "Pahit"
+	},
+	{
+		"word": "濃い",
+		"reading": "こい",
+		"meaning": "Pekat"
+	},
+	{
+		"word": "薄い",
+		"reading": "うすい",
+		"meaning": "Encer"
+	},
+	{
+		"word": "青い",
+		"reading": "あおい",
+		"meaning": "Biru"
+	},
+	{
+		"word": "赤い",
+		"reading": "あかい",
+		"meaning": "Merah"
+	},
+	{
+		"word": "黄色い",
+		"reading": "きいろい",
+		"meaning": "Kuning"
+	},
+	{
+		"word": "黒い",
+		"reading": "くろい",
+		"meaning": "Hitam"
+	},
+	{
+		"word": "白い",
+		"reading": "しろい",
+		"meaning": "Putih"
+	},
+	{
+		"word": "茶色い",
+		"reading": "ちゃいろい",
+		"meaning": "Cokelat"
 	}
 ]
