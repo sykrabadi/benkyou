@@ -114,10 +114,6 @@ func (s *Service) GetQuestionByLevel(level string) model.Question {
 }
 
 func (s *Service) getKanjiQuestion(pool []model.Examples, question model.Examples) model.Question {
-	// pool := s.Examples[level]
-
-	// question := pool[rand.IntN(len(pool))]
-
 	seen := make(map[string]bool)
 
 	seen[stripDot(question.Reading)] = true
@@ -158,22 +154,22 @@ func (s *Service) getKanjiQuestion(pool []model.Examples, question model.Example
 func (s *Service) getMeaningQuestion(pool []model.Examples, question model.Examples) model.Question {
 	seen := make(map[string]bool)
 
-	seen[question.Meaning] = true
+	seen[lowerWord(question.Meaning)] = true
 
 	options := make([]model.Options, 0)
 
 	options = append(options, model.Options{
-		Option: question.Meaning,
+		Option: capitalizeFirstLetter(question.Meaning),
 		Answer: true,
 	})
 
 	for len(options) < totalOptions {
 		candidate := pool[rand.IntN(len(pool))]
 
-		if !seen[candidate.Meaning] {
-			seen[candidate.Meaning] = true
+		if !seen[lowerWord(candidate.Meaning)] {
+			seen[lowerWord(candidate.Meaning)] = true
 			option := model.Options{
-				Option: candidate.Meaning,
+				Option: capitalizeFirstLetter(candidate.Meaning),
 				Answer: false,
 			}
 			options = append(options, option)
@@ -186,10 +182,18 @@ func (s *Service) getMeaningQuestion(pool []model.Examples, question model.Examp
 
 	return model.Question{
 		Question: question.Word,
-		Meaning:  question.Meaning,
+		Meaning:  capitalizeFirstLetter(question.Meaning),
 		Furigana: question.Reading,
 		Options:  options,
 	}
+}
+
+func capitalizeFirstLetter(word string) string {
+	return strings.ToUpper(word[:1]) + word[1:]
+}
+
+func lowerWord(word string) string{
+	return strings.ToLower(word)
 }
 
 func stripDot(reading string) string {
