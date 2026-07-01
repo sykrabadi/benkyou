@@ -105,6 +105,19 @@ func (s *Service) GetQuestionByLevel(level string) model.Question {
 
 	question := pool[rand.IntN(len(pool))]
 
+	rng := rand.IntN(2)
+	if rng < 1 {
+		return s.getMeaningQuestion(pool, question)
+	}
+
+	return s.getKanjiQuestion(pool, question)
+}
+
+func (s *Service) getKanjiQuestion(pool []model.Examples, question model.Examples) model.Question {
+	// pool := s.Examples[level]
+
+	// question := pool[rand.IntN(len(pool))]
+
 	seen := make(map[string]bool)
 
 	seen[stripDot(question.Reading)] = true
@@ -124,6 +137,43 @@ func (s *Service) GetQuestionByLevel(level string) model.Question {
 			seen[reading] = true
 			option := model.Options{
 				Option: reading,
+				Answer: false,
+			}
+			options = append(options, option)
+		}
+	}
+
+	rand.Shuffle(len(options), func(i, j int) {
+		options[i], options[j] = options[j], options[i]
+	})
+
+	return model.Question{
+		Question: question.Word,
+		Meaning:  question.Meaning,
+		Furigana: question.Reading,
+		Options:  options,
+	}
+}
+
+func (s *Service) getMeaningQuestion(pool []model.Examples, question model.Examples) model.Question {
+	seen := make(map[string]bool)
+
+	seen[question.Meaning] = true
+
+	options := make([]model.Options, 0)
+
+	options = append(options, model.Options{
+		Option: question.Meaning,
+		Answer: true,
+	})
+
+	for len(options) < totalOptions {
+		candidate := pool[rand.IntN(len(pool))]
+
+		if !seen[candidate.Meaning] {
+			seen[candidate.Meaning] = true
+			option := model.Options{
+				Option: candidate.Meaning,
 				Answer: false,
 			}
 			options = append(options, option)
