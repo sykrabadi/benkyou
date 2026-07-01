@@ -58,5 +58,155 @@
 		"word": "細い",
 		"reading": "ほそ.い",
 		"meaning": "ramping, tipis"
+	},
+	{
+		"word": "厚い",
+		"reading": "あつい",
+		"meaning": "Tebal"
+	},
+	{
+		"word": "薄い",
+		"reading": "うすい",
+		"meaning": "Tipis"
+	},
+	{
+		"word": "広い",
+		"reading": "ひろい",
+		"meaning": "Luas"
+	},
+	{
+		"word": "狭い",
+		"reading": "せまい",
+		"meaning": "Sempit"
+	},
+	{
+		"word": "若い",
+		"reading": "わかい",
+		"meaning": "Muda"
+	},
+	{
+		"word": "新しい",
+		"reading": "あたらし",
+		"meaning": "Baru"
+	},
+	{
+		"word": "古い",
+		"reading": "ふるい",
+		"meaning": "Lama"
+	},
+	{
+		"word": "高い",
+		"reading": "たかい",
+		"meaning": "Tinggi, mahal"
+	},
+	{
+		"word": "低い",
+		"reading": "ひくい",
+		"meaning": "Rendah"
+	},
+	{
+		"word": "安い",
+		"reading": "やすい",
+		"meaning": "Murah"
+	},
+	{
+		"word": "早い",
+		"reading": "はやい",
+		"meaning": "Cepat (awal)"
+	},
+	{
+		"word": "速い",
+		"reading": "はやい",
+		"meaning": "Cepat (kelajuan)"
+	},
+	{
+		"word": "遅い",
+		"reading": "おそい",
+		"meaning": "Lambat"
+	},
+	{
+		"word": "遠い",
+		"reading": "とおい",
+		"meaning": "Jauh"
+	},
+	{
+		"word": "近い",
+		"reading": "ちかい",
+		"meaning": "Dekat"
+	},
+	{
+		"word": "強い",
+		"reading": "つよい",
+		"meaning": "Kuat"
+	},
+	{
+		"word": "弱い",
+		"reading": "よわい",
+		"meaning": "Lemah"
+	},
+	{
+		"word": "重い",
+		"reading": "おもい",
+		"meaning": "Berat"
+	},
+	{
+		"word": "軽い",
+		"reading": "かるい",
+		"meaning": "Ringan"
+	},
+	{
+		"word": "明るい",
+		"reading": "あかるい",
+		"meaning": "Terang, riang"
+	},
+	{
+		"word": "暗い",
+		"reading": "くらい",
+		"meaning": "Gelap, suram"
+	},
+	{
+		"word": "難しい",
+		"reading": "むずかしい",
+		"meaning": "Sulit"
+	},
+	{
+		"word": "易しい",
+		"reading": "やさしい",
+		"meaning": "Mudah"
+	},
+	{
+		"word": "いい",
+		"reading": "いい",
+		"meaning": "Bagus"
+	},
+	{
+		"word": "熱い",
+		"reading": "あつい",
+		"meaning": "Panas"
+	},
+	{
+		"word": "冷たい",
+		"reading": "つめたい",
+		"meaning": "Dingin"
+	},
+	{
+		"word": "温かい",
+		"reading": "あたたかい",
+		"meaning": "Hangat"
+	},
+	{
+		"word": "ぬるい",
+		"reading": "ぬるい",
+		"meaning": "Mulai dingin"
+	},
+	{
+		"word": "暑い",
+		"reading": "あつい",
+		"meaning": "Panas (suhu)"
+	},
+	{
+		"word": "寒い",
+		"reading": "さむい",
+		"meaning": "Dingin (suhu)"
 	}
 ]
