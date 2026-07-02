@@ -288,5 +288,135 @@
 		"word": "茶色い",
 		"reading": "ちゃいろい",
 		"meaning": "Cokelat"
+	},
+	{
+		"word": "丸い",
+		"reading": "まる.い",
+		"meaning": "Bulat"
+	},
+	{
+		"word": "四角い",
+		"reading": "し.かく.い",
+		"meaning": "Persegi empat"
+	},
+	{
+		"word": "汚い",
+		"reading": "きたない",
+		"meaning": "Kotor"
+	},
+	{
+		"word": "おかしい",
+		"reading": "おかしい",
+		"meaning": "Aneh, lucu"
+	},
+	{
+		"word": "危ない",
+		"reading": "あぶ.ない",
+		"meaning": "Bahaya"
+	},
+	{
+		"word": "うるさい",
+		"reading": "うるさい",
+		"meaning": "Berisik"
+	},
+	{
+		"word": "忙しい",
+		"reading": "いそが.しい",
+		"meaning": "Sibuk"
+	},
+	{
+		"word": "すごい",
+		"reading": "すごい",
+		"meaning": "Hebat"
+	},
+	{
+		"word": "素晴らしい",
+		"reading": "す.ば.らしい",
+		"meaning": "Luar biasa"
+	},
+	{
+		"word": "かっこいい",
+		"reading": "かっこいい",
+		"meaning": "Keren"
+	},
+	{
+		"word": "中がいい",
+		"reading": "なか.がいい",
+		"meaning": "Rukun, akrab"
+	},
+	{
+		"word": "中が悪い",
+		"reading": "なか.が.わる.い",
+		"meaning": "Hubungannya buruk, bermusuhan"
+	},
+	{
+		"word": "親しい",
+		"reading": "した.しい",
+		"meaning": "Akrab"
+	},
+	{
+		"word": "優しい",
+		"reading": "やさ.しい",
+		"meaning": "Baik hati, ramah"
+	},
+	{
+		"word": "かわいい",
+		"reading": "かわいい",
+		"meaning": "Lucu, cantik, imut"
+	},
+	{
+		"word": "美しい",
+		"reading": "うつく.しい",
+		"meaning": "Indah"
+	},
+	{
+		"word": "おとなしい",
+		"reading": "おとなしい",
+		"meaning": "Lemah lembut, pendiam"
+	},
+	{
+		"word": "楽しい",
+		"reading": "たの.しい",
+		"meaning": "Menyenangkan"
+	},
+	{
+		"word": "面白い",
+		"reading": "おも.しろ.い",
+		"meaning": "Menarik"
+	},
+	{
+		"word": "うれしい",
+		"reading": "うれしい",
+		"meaning": "Senang, gembira"
+	},
+	{
+		"word": "寂しい",
+		"reading": "さび.しい",
+		"meaning": "Kesepian"
+	},
+	{
+		"word": "怖い",
+		"reading": "こわ.い",
+		"meaning": "Takut"
+	},
+	{
+		"word": "眠い",
+		"reading": "ねむ.い",
+		"meaning": "Mengantuk"
+	},
+	{
+		"word": "痛い",
+		"reading": "いた.い",
+		"meaning": "Sakit"
+	},
+	{
+		"word": "欲しい",
+		"reading": "ほ.しい",
+		"meaning": "Ingin mendapatkan"
+	},
+	{
+		"word": "ない",
+		"reading": "ない",
+		"meaning": "Tidak ada"
 	}
 ]
