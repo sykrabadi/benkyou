@@ -3,7 +3,8 @@ package service
 import "benkyou/model"
 
 type Service struct {
-	Data     model.PopulatedKanji
+	Data       model.PopulatedKanji
+	// Examples   model.PopulatedKanjiByLevel
 	Examples model.PopulatedKanjiByLevel
 }
 

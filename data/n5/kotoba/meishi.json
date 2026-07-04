@@ -1,0 +1,26 @@
+[
+    {
+        "word": "日本",
+        "reading": "に.ほん",
+        "meaning": "Jepang",
+        "type": "meishi"
+    },
+    {
+        "word": "日付",
+        "reading": "ひ.づけ",
+        "meaning": "Jumlah Hari",
+        "type": "meishi"
+    },
+    {
+        "word": "人数",
+        "reading": "にん.ずう",
+        "meaning": "Jumlah Orang",
+        "type": "meishi"
+    },
+    {
+        "word": "二人",
+        "reading": "ふた.り",
+        "meaning": "Dua Orang",
+        "type": "meishi"
+    }
+]

@@ -34,7 +34,7 @@ func TestPopulateKanji(t *testing.T) {
 	t.Run("it should not return error and kanji data exists", func(t *testing.T) {
 		n5Level := "N5"
 		dirLocation := "../data/"
-		data, n5Examples,err := service.PopulateKanjiByLevel(dirLocation, n5Level)
+		data, n5Examples, err := service.PopulateKanjiByLevel(dirLocation, n5Level)
 
 		assert.NoError(t, err)
 		assert.NotEmpty(t, data)
@@ -78,23 +78,24 @@ func TestListKanjiByLevel(t *testing.T) {
 		assert.NoError(t, err)
 
 		req := model.ListKanjiByLevelRequest{
-			Level: "n5",
+			Level:    "n5",
 			PageSize: 2,
-			Page: 1,
+			Page:     1,
 		}
-		result, err :=svc.ListKanjiByLevel(req)
+		result, err := svc.ListKanjiByLevel(req)
 		assert.NoError(t, err)
 		assert.NotEmpty(t, result)
 	})
 }
 
-func TestGetQuestionByLevel(t *testing.T){
+func TestGetQuestionByLevel(t *testing.T) {
 	t.Run("it should not return empty question", func(t *testing.T) {
 		svc, err := service.NewKanjiService("../data")
 		assert.NoError(t, err)
 
 		assert.NoError(t, err)
-		question := svc.GetQuestionByLevel("n5")
+		question, err := svc.GetQuestionByLevel(string(model.LevelN5), model.WordTypeKeiyoushi)
+		assert.NoError(t, err)
 
 		assert.NotEmpty(t, question.Question)
 		assert.NotEmpty(t, question.Meaning)
@@ -102,3 +103,14 @@ func TestGetQuestionByLevel(t *testing.T){
 		assert.NotEmpty(t, question.Options)
 	})
 }
+
+func TestPopulateKanjiV2(t *testing.T) {
+	t.Run("", func(t *testing.T) {
+		svc, err := service.NewKanjiService("../data")
+		assert.NoError(t, err)
+
+		assert.NotEmpty(t, svc.Examples["n5"]["keiyoushi"])
+		assert.NotEmpty(t, svc.Examples["n5"]["meishi"])
+	})
+}
+
