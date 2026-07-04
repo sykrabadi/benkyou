@@ -13,7 +13,10 @@ import (
 	"github.com/pkg/errors"
 )
 
-const totalOptions = 4
+const (
+	totalOptions          = 4
+	maxAttemptsMultiplier = 3
+)
 
 func NewKanjiService(
 	kanjiDir string,
@@ -26,7 +29,6 @@ func NewKanjiService(
 	data := make(model.PopulatedKanji)
 
 	exampleByLevel := make(model.PopulatedKanjiByLevel)
-
 	for _, entry := range entries {
 		if !entry.IsDir() {
 			continue
@@ -39,11 +41,11 @@ func NewKanjiService(
 		}
 
 		data[level] = kanji
-		exampleByLevel[level] = examplesByLevel
+		exampleByLevel[level] = populateExampleByWordType(examplesByLevel)
 	}
 
 	return &Service{
-		Data:     data,
+		Data:       data,
 		Examples: exampleByLevel,
 	}, nil
 }
@@ -60,32 +62,60 @@ func PopulateKanjiByLevel(dataDir, level string) ([]model.Kanji, []model.Example
 
 	data := make([]model.Kanji, 0)
 
-	// exampleByLevel := make([]model.Examples, 0)
-
 	kanjiDecoder := json.NewDecoder(kanjiFile)
 
 	if err := kanjiDecoder.Decode(&data); err != nil {
 		return []model.Kanji{}, []model.Examples{}, errors.Wrap(err, "fail decode JSON kanji file")
 	}
 
-	kotobaPath := fmt.Sprintf("%s/%s/kotoba.json", dataDir, level)
+	kotobaPath := fmt.Sprintf("%s/%s/kotoba", dataDir, level)
 
-	kotobaFile, err := os.Open(kotobaPath)
+	kotobaDir, err := os.ReadDir(kotobaPath)
 	if err != nil {
-		return []model.Kanji{}, []model.Examples{}, errors.Wrap(typeErrors.ErrFileNotFound, "fail kotoba file")
+		return []model.Kanji{}, []model.Examples{}, errors.Wrap(err, "fail open kotoba directory")
 	}
-
-	defer kotobaFile.Close()
 
 	exampleByLevel := make([]model.Examples, 0)
 
-	kotobaDecoder := json.NewDecoder(kotobaFile)
+	for _, entry := range kotobaDir {
+		wordTypePath := kotobaPath + "/" + entry.Name()
+		examples, err := loadExamplesFromFile(wordTypePath)
+		if err != nil {
+			return []model.Kanji{}, []model.Examples{}, err
+		}
 
-	if err := kotobaDecoder.Decode(&exampleByLevel); err != nil {
-		return []model.Kanji{}, []model.Examples{}, errors.Wrap(err, "fail decode JSON kanji file")
+		exampleByLevel = append(exampleByLevel, examples...)
 	}
 
 	return data, exampleByLevel, nil
+}
+
+func loadExamplesFromFile(path string) ([]model.Examples, error) {
+	f, err := os.Open(path)
+	if err != nil {
+		return []model.Examples{}, errors.Wrap(typeErrors.ErrFileNotFound, "fail kotoba file")
+	}
+
+	defer f.Close()
+
+	kotobaDecoder := json.NewDecoder(f)
+
+	examples := make([]model.Examples, 0)
+
+	if err := kotobaDecoder.Decode(&examples); err != nil {
+		return []model.Examples{}, errors.Wrap(err, "fail decode JSON kanji file")
+	}
+
+	return examples, nil
+}
+
+func populateExampleByWordType(examples []model.Examples) map[string][]model.Examples {
+	examplesByWordType := make(map[string][]model.Examples)
+	for _, v := range examples {
+		examplesByWordType[v.Type] = append(examplesByWordType[v.Type], v)
+	}
+
+	return examplesByWordType
 }
 
 func (s *Service) ListKanjiByLevel(req model.ListKanjiByLevelRequest) ([]model.Kanji, error) {
@@ -100,8 +130,11 @@ func (s *Service) ListKanjiByLevel(req model.ListKanjiByLevelRequest) ([]model.K
 	return data[startPaging:endPaging], nil
 }
 
-func (s *Service) GetQuestionByLevel(level string) model.Question {
-	pool := s.Examples[level]
+func (s *Service) GetQuestionByLevel(level string, wordType string) (model.Question, error) {
+	pool, ok := s.Examples[level][wordType]
+	if !ok || len(pool) == 0 {
+		return model.Question{}, errors.Errorf("data untuk level %v dan jenis kata %v tidak ditemukan", level, wordType)
+	}
 
 	question := pool[rand.IntN(len(pool))]
 
@@ -113,7 +146,7 @@ func (s *Service) GetQuestionByLevel(level string) model.Question {
 	return s.getKanjiQuestion(pool, question)
 }
 
-func (s *Service) getKanjiQuestion(pool []model.Examples, question model.Examples) model.Question {
+func (s *Service) getKanjiQuestion(pool []model.Examples, question model.Examples) (model.Question, error) {
 	seen := make(map[string]bool)
 
 	seen[stripDot(question.Reading)] = true
@@ -125,7 +158,10 @@ func (s *Service) getKanjiQuestion(pool []model.Examples, question model.Example
 		Answer: true,
 	})
 
-	for len(options) < totalOptions {
+	maxAttempts := len(pool) * maxAttemptsMultiplier
+	attempts := 0
+
+	for len(options) < totalOptions && attempts < maxAttempts {
 		candidate := pool[rand.IntN(len(pool))]
 		reading := stripDot(candidate.Reading)
 
@@ -137,6 +173,11 @@ func (s *Service) getKanjiQuestion(pool []model.Examples, question model.Example
 			}
 			options = append(options, option)
 		}
+		attempts++
+	}
+
+	if len(options) < totalOptions {
+		return model.Question{}, typeErrors.ErrInsufficientOptions
 	}
 
 	rand.Shuffle(len(options), func(i, j int) {
@@ -147,11 +188,12 @@ func (s *Service) getKanjiQuestion(pool []model.Examples, question model.Example
 		Question: question.Word,
 		Meaning:  question.Meaning,
 		Furigana: question.Reading,
+		Type:     question.Type,
 		Options:  options,
-	}
+	}, nil
 }
 
-func (s *Service) getMeaningQuestion(pool []model.Examples, question model.Examples) model.Question {
+func (s *Service) getMeaningQuestion(pool []model.Examples, question model.Examples) (model.Question, error) {
 	seen := make(map[string]bool)
 
 	seen[lowerWord(question.Meaning)] = true
@@ -163,7 +205,10 @@ func (s *Service) getMeaningQuestion(pool []model.Examples, question model.Examp
 		Answer: true,
 	})
 
-	for len(options) < totalOptions {
+	maxAttempts := len(pool) * maxAttemptsMultiplier
+	attempts := 0
+
+	for len(options) < totalOptions && attempts < maxAttempts {
 		candidate := pool[rand.IntN(len(pool))]
 
 		if !seen[lowerWord(candidate.Meaning)] {
@@ -174,6 +219,12 @@ func (s *Service) getMeaningQuestion(pool []model.Examples, question model.Examp
 			}
 			options = append(options, option)
 		}
+
+		attempts++
+	}
+
+	if len(options) < totalOptions {
+		return model.Question{}, typeErrors.ErrInsufficientOptions
 	}
 
 	rand.Shuffle(len(options), func(i, j int) {
@@ -184,15 +235,16 @@ func (s *Service) getMeaningQuestion(pool []model.Examples, question model.Examp
 		Question: question.Word,
 		Meaning:  capitalizeFirstLetter(question.Meaning),
 		Furigana: question.Reading,
+		Type:     question.Type,
 		Options:  options,
-	}
+	}, nil
 }
 
 func capitalizeFirstLetter(word string) string {
 	return strings.ToUpper(word[:1]) + word[1:]
 }
 
-func lowerWord(word string) string{
+func lowerWord(word string) string {
 	return strings.ToLower(word)
 }
 
@@ -200,6 +252,7 @@ func stripDot(reading string) string {
 	return strings.ReplaceAll(reading, ".", "")
 }
 
+// TODO
 func ReadKanjiByID(
 	id string,
 ) {

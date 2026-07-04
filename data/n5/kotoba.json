@@ -1,422 +1,482 @@
 [
-    {
-        "word": "日本",
-        "reading": "に.ほん",
-        "meaning": "Jepang"
-    },
-    {
-        "word": "日付",
-        "reading": "ひ.づけ",
-        "meaning": "Jumlah Hari"
-    },
-    {
-        "word": "人数",
-        "reading": "にん.ずう",
-        "meaning": "Jumlah Orang"
-    },
-    {
-        "word": "二人",
-        "reading": "ふた.り",
-        "meaning": "Dua Orang"
-    },
-    {
+	{
 		"word": "大きい",
 		"reading": "おお.きい",
-		"meaning": "besar"
+		"meaning": "besar",
+		"type": "keiyoushi"
 	},
 	{
 		"word": "小さい",
 		"reading": "ちい.さい",
-		"meaning": "kecil"
+		"meaning": "kecil",
+		"type": "keiyoushi"
 	},
 	{
 		"word": "長い",
 		"reading": "なが.い",
-		"meaning": "panjang"
+		"meaning": "panjang",
+		"type": "keiyoushi"
 	},
 	{
 		"word": "短い",
 		"reading": "みじ.かい",
-		"meaning": "pendek"
+		"meaning": "pendek",
+		"type": "keiyoushi"
 	},
 	{
 		"word": "多い",
 		"reading": "おお.い",
-		"meaning": "banyak"
+		"meaning": "banyak",
+		"type": "keiyoushi"
 	},
 	{
 		"word": "少ない",
 		"reading": "すく.ない",
-		"meaning": "sedikit"
+		"meaning": "sedikit",
+		"type": "keiyoushi"
 	},
 	{
 		"word": "太い",
 		"reading": "ふと.い",
-		"meaning": "gemuk, tebal"
+		"meaning": "gemuk, tebal",
+		"type": "keiyoushi"
 	},
 	{
 		"word": "細い",
 		"reading": "ほそ.い",
-		"meaning": "ramping, tipis"
+		"meaning": "ramping, tipis",
+		"type": "keiyoushi"
 	},
 	{
 		"word": "厚い",
 		"reading": "あつい",
-		"meaning": "Tebal"
+		"meaning": "Tebal",
+		"type": "keiyoushi"
 	},
 	{
 		"word": "薄い",
 		"reading": "うすい",
-		"meaning": "Tipis"
+		"meaning": "Tipis",
+		"type": "keiyoushi"
 	},
 	{
 		"word": "広い",
 		"reading": "ひろい",
-		"meaning": "Luas"
+		"meaning": "Luas",
+		"type": "keiyoushi"
 	},
 	{
 		"word": "狭い",
 		"reading": "せまい",
-		"meaning": "Sempit"
+		"meaning": "Sempit",
+		"type": "keiyoushi"
 	},
 	{
 		"word": "若い",
 		"reading": "わかい",
-		"meaning": "Muda"
+		"meaning": "Muda",
+		"type": "keiyoushi"
 	},
 	{
 		"word": "新しい",
 		"reading": "あたらし",
-		"meaning": "Baru"
+		"meaning": "Baru",
+		"type": "keiyoushi"
 	},
 	{
 		"word": "古い",
 		"reading": "ふるい",
-		"meaning": "Lama"
+		"meaning": "Lama",
+		"type": "keiyoushi"
 	},
 	{
 		"word": "高い",
 		"reading": "たかい",
-		"meaning": "Tinggi, mahal"
+		"meaning": "Tinggi, mahal",
+		"type": "keiyoushi"
 	},
 	{
 		"word": "低い",
 		"reading": "ひくい",
-		"meaning": "Rendah"
+		"meaning": "Rendah",
+		"type": "keiyoushi"
 	},
 	{
 		"word": "安い",
 		"reading": "やすい",
-		"meaning": "Murah"
+		"meaning": "Murah",
+		"type": "keiyoushi"
 	},
 	{
 		"word": "早い",
 		"reading": "はやい",
-		"meaning": "Cepat (awal)"
+		"meaning": "Cepat (awal)",
+		"type": "keiyoushi"
 	},
 	{
 		"word": "速い",
 		"reading": "はやい",
-		"meaning": "Cepat (kelajuan)"
+		"meaning": "Cepat (kelajuan)",
+		"type": "keiyoushi"
 	},
 	{
 		"word": "遅い",
 		"reading": "おそい",
-		"meaning": "Lambat"
+		"meaning": "Lambat",
+		"type": "keiyoushi"
 	},
 	{
 		"word": "遠い",
 		"reading": "とおい",
-		"meaning": "Jauh"
+		"meaning": "Jauh",
+		"type": "keiyoushi"
 	},
 	{
 		"word": "近い",
 		"reading": "ちかい",
-		"meaning": "Dekat"
+		"meaning": "Dekat",
+		"type": "keiyoushi"
 	},
 	{
 		"word": "強い",
 		"reading": "つよい",
-		"meaning": "Kuat"
+		"meaning": "Kuat",
+		"type": "keiyoushi"
 	},
 	{
 		"word": "弱い",
 		"reading": "よわい",
-		"meaning": "Lemah"
+		"meaning": "Lemah",
+		"type": "keiyoushi"
 	},
 	{
 		"word": "重い",
 		"reading": "おもい",
-		"meaning": "Berat"
+		"meaning": "Berat",
+		"type": "keiyoushi"
 	},
 	{
 		"word": "軽い",
 		"reading": "かるい",
-		"meaning": "Ringan"
+		"meaning": "Ringan",
+		"type": "keiyoushi"
 	},
 	{
 		"word": "明るい",
 		"reading": "あかるい",
-		"meaning": "Terang, riang"
+		"meaning": "Terang, riang",
+		"type": "keiyoushi"
 	},
 	{
 		"word": "暗い",
 		"reading": "くらい",
-		"meaning": "Gelap, suram"
+		"meaning": "Gelap, suram",
+		"type": "keiyoushi"
 	},
 	{
 		"word": "難しい",
 		"reading": "むずかしい",
-		"meaning": "Sulit"
+		"meaning": "Sulit",
+		"type": "keiyoushi"
 	},
 	{
 		"word": "易しい",
 		"reading": "やさしい",
-		"meaning": "Mudah"
+		"meaning": "Mudah",
+		"type": "keiyoushi"
 	},
 	{
 		"word": "いい",
 		"reading": "いい",
-		"meaning": "Bagus"
+		"meaning": "Bagus",
+		"type": "keiyoushi"
 	},
 	{
 		"word": "熱い",
 		"reading": "あつい",
-		"meaning": "Panas"
+		"meaning": "Panas",
+		"type": "keiyoushi"
 	},
 	{
 		"word": "冷たい",
 		"reading": "つめたい",
-		"meaning": "Dingin"
+		"meaning": "Dingin",
+		"type": "keiyoushi"
 	},
 	{
 		"word": "温かい",
 		"reading": "あたたかい",
-		"meaning": "Hangat"
+		"meaning": "Hangat",
+		"type": "keiyoushi"
 	},
 	{
 		"word": "ぬるい",
 		"reading": "ぬるい",
-		"meaning": "Mulai dingin"
+		"meaning": "Mulai dingin",
+		"type": "keiyoushi"
 	},
 	{
 		"word": "暑い",
 		"reading": "あつい",
-		"meaning": "Panas (suhu)"
+		"meaning": "Panas (suhu)",
+		"type": "keiyoushi"
 	},
 	{
 		"word": "寒い",
 		"reading": "さむい",
-		"meaning": "Dingin (suhu)"
+		"meaning": "Dingin (suhu)",
+		"type": "keiyoushi"
 	},
 	{
 		"word": "暖かい",
 		"reading": "あたたかい",
-		"meaning": "Hangat (suhu) "
+		"meaning": "Hangat (suhu) ",
+		"type": "keiyoushi"
 	},
 	{
 		"word": "涼しい",
 		"reading": "すずしい",
-		"meaning": "Sejuk (suhu) "
+		"meaning": "Sejuk (suhu) ",
+		"type": "keiyoushi"
 	},
 	{
 		"word": "むし暑い",
 		"reading": "むしあつい",
-		"meaning": "Panas dan lembab (suhu) "
+		"meaning": "Panas dan lembab (suhu) ",
+		"type": "keiyoushi"
 	},
 	{
 		"word": "甘い",
 		"reading": "あまい",
-		"meaning": "Manis"
+		"meaning": "Manis",
+		"type": "keiyoushi"
 	},
 	{
 		"word": "辛い",
 		"reading": "からい",
-		"meaning": "Pedas"
+		"meaning": "Pedas",
+		"type": "keiyoushi"
 	},
 	{
 		"word": "すっぱい",
 		"reading": "すっぱい",
-		"meaning": "Asam"
+		"meaning": "Asam",
+		"type": "keiyoushi"
 	},
 	{
 		"word": "塩辛い",
 		"reading": "しおからい",
-		"meaning": "Asin"
+		"meaning": "Asin",
+		"type": "keiyoushi"
 	},
 	{
 		"word": "にがい",
 		"reading": "にがい",
-		"meaning": "Pahit"
+		"meaning": "Pahit",
+		"type": "keiyoushi"
 	},
 	{
 		"word": "濃い",
 		"reading": "こい",
-		"meaning": "Pekat"
+		"meaning": "Pekat",
+		"type": "keiyoushi"
 	},
 	{
 		"word": "薄い",
 		"reading": "うすい",
-		"meaning": "Encer"
+		"meaning": "Encer",
+		"type": "keiyoushi"
 	},
 	{
 		"word": "青い",
 		"reading": "あおい",
-		"meaning": "Biru"
+		"meaning": "Biru",
+		"type": "keiyoushi"
 	},
 	{
 		"word": "赤い",
 		"reading": "あかい",
-		"meaning": "Merah"
+		"meaning": "Merah",
+		"type": "keiyoushi"
 	},
 	{
 		"word": "黄色い",
 		"reading": "きいろい",
-		"meaning": "Kuning"
+		"meaning": "Kuning",
+		"type": "keiyoushi"
 	},
 	{
 		"word": "黒い",
 		"reading": "くろい",
-		"meaning": "Hitam"
+		"meaning": "Hitam",
+		"type": "keiyoushi"
 	},
 	{
 		"word": "白い",
 		"reading": "しろい",
-		"meaning": "Putih"
+		"meaning": "Putih",
+		"type": "keiyoushi"
 	},
 	{
 		"word": "茶色い",
 		"reading": "ちゃいろい",
-		"meaning": "Cokelat"
+		"meaning": "Cokelat",
+		"type": "keiyoushi"
 	},
 	{
 		"word": "丸い",
 		"reading": "まる.い",
-		"meaning": "Bulat"
+		"meaning": "Bulat",
+		"type": "keiyoushi"
 	},
 	{
 		"word": "四角い",
 		"reading": "し.かく.い",
-		"meaning": "Persegi empat"
+		"meaning": "Persegi empat",
+		"type": "keiyoushi"
 	},
 	{
 		"word": "汚い",
 		"reading": "きたない",
-		"meaning": "Kotor"
+		"meaning": "Kotor",
+		"type": "keiyoushi"
 	},
 	{
 		"word": "おかしい",
 		"reading": "おかしい",
-		"meaning": "Aneh, lucu"
+		"meaning": "Aneh, lucu",
+		"type": "keiyoushi"
 	},
 	{
 		"word": "危ない",
 		"reading": "あぶ.ない",
-		"meaning": "Bahaya"
+		"meaning": "Bahaya",
+		"type": "keiyoushi"
 	},
 	{
 		"word": "うるさい",
 		"reading": "うるさい",
-		"meaning": "Berisik"
+		"meaning": "Berisik",
+		"type": "keiyoushi"
 	},
 	{
 		"word": "忙しい",
 		"reading": "いそが.しい",
-		"meaning": "Sibuk"
+		"meaning": "Sibuk",
+		"type": "keiyoushi"
 	},
 	{
 		"word": "すごい",
 		"reading": "すごい",
-		"meaning": "Hebat"
+		"meaning": "Hebat",
+		"type": "keiyoushi"
 	},
 	{
 		"word": "素晴らしい",
 		"reading": "す.ば.らしい",
-		"meaning": "Luar biasa"
+		"meaning": "Luar biasa",
+		"type": "keiyoushi"
 	},
 	{
 		"word": "かっこいい",
 		"reading": "かっこいい",
-		"meaning": "Keren"
+		"meaning": "Keren",
+		"type": "keiyoushi"
 	},
 	{
 		"word": "中がいい",
 		"reading": "なか.がいい",
-		"meaning": "Rukun, akrab"
+		"meaning": "Rukun, akrab",
+		"type": "keiyoushi"
 	},
 	{
 		"word": "中が悪い",
 		"reading": "なか.が.わる.い",
-		"meaning": "Hubungannya buruk, bermusuhan"
+		"meaning": "Hubungannya buruk, bermusuhan",
+		"type": "keiyoushi"
 	},
 	{
 		"word": "親しい",
 		"reading": "した.しい",
-		"meaning": "Akrab"
+		"meaning": "Akrab",
+		"type": "keiyoushi"
 	},
 	{
 		"word": "優しい",
 		"reading": "やさ.しい",
-		"meaning": "Baik hati, ramah"
+		"meaning": "Baik hati, ramah",
+		"type": "keiyoushi"
 	},
 	{
 		"word": "かわいい",
 		"reading": "かわいい",
-		"meaning": "Lucu, cantik, imut"
+		"meaning": "Lucu, cantik, imut",
+		"type": "keiyoushi"
 	},
 	{
 		"word": "美しい",
 		"reading": "うつく.しい",
-		"meaning": "Indah"
+		"meaning": "Indah",
+		"type": "keiyoushi"
 	},
 	{
 		"word": "おとなしい",
 		"reading": "おとなしい",
-		"meaning": "Lemah lembut, pendiam"
+		"meaning": "Lemah lembut, pendiam",
+		"type": "keiyoushi"
 	},
 	{
 		"word": "楽しい",
 		"reading": "たの.しい",
-		"meaning": "Menyenangkan"
+		"meaning": "Menyenangkan",
+		"type": "keiyoushi"
 	},
 	{
 		"word": "面白い",
 		"reading": "おも.しろ.い",
-		"meaning": "Menarik"
+		"meaning": "Menarik",
+		"type": "keiyoushi"
 	},
 	{
 		"word": "うれしい",
 		"reading": "うれしい",
-		"meaning": "Senang, gembira"
+		"meaning": "Senang, gembira",
+		"type": "keiyoushi"
 	},
 	{
 		"word": "寂しい",
 		"reading": "さび.しい",
-		"meaning": "Kesepian"
+		"meaning": "Kesepian",
+		"type": "keiyoushi"
 	},
 	{
 		"word": "怖い",
 		"reading": "こわ.い",
-		"meaning": "Takut"
+		"meaning": "Takut",
+		"type": "keiyoushi"
 	},
 	{
 		"word": "眠い",
 		"reading": "ねむ.い",
-		"meaning": "Mengantuk"
+		"meaning": "Mengantuk",
+		"type": "keiyoushi"
 	},
 	{
 		"word": "痛い",
 		"reading": "いた.い",
-		"meaning": "Sakit"
+		"meaning": "Sakit",
+		"type": "keiyoushi"
 	},
 	{
 		"word": "欲しい",
 		"reading": "ほ.しい",
-		"meaning": "Ingin mendapatkan"
+		"meaning": "Ingin mendapatkan",
+		"type": "keiyoushi"
 	},
 	{
 		"word": "ない",
 		"reading": "ない",
-		"meaning": "Tidak ada"
+		"meaning": "Tidak ada",
+		"type": "keiyoushi"
 	}
 ]

@@ -2,7 +2,11 @@ package model
 
 type PopulatedKanji map[string][]Kanji
 
-type PopulatedKanjiByLevel map[string][]Examples
+type PopulatedKanjiByLevel map[string]map[string][]Examples
+
+// nested map with outer key is level and inner key is
+// word type
+type PopulatedKanjiByWordType map[string][]Examples
 
 type Readings struct {
 	On  []string `json:"on"`
@@ -13,6 +17,7 @@ type Examples struct {
 	Word    string `json:"word"`
 	Reading string `json:"reading"`
 	Meaning string `json:"meaning"`
+	Type    string `json:"type"`
 }
 
 type Kanji struct {
@@ -38,10 +43,6 @@ type ListKanjiByLevelRequest struct {
 func HandleKanjiByRequestPaging(req ListKanjiByLevelRequest, kanjiData []Kanji) (start, end int) {
 	const minLimit = 5
 
-	// if req.PageSize <= 0 {
-	// 	req.PageSize = 5
-	// }
-
 	start = (req.Page - 1) * req.PageSize
 
 	end = start + req.PageSize
@@ -54,11 +55,14 @@ func HandleKanjiByRequestPaging(req ListKanjiByLevelRequest, kanjiData []Kanji) 
 }
 
 var (
-	LevelN5 Level = "N5"
-	LevelN4 Level = "N4"
-	LevelN3 Level = "N3"
-	LevelN2 Level = "N2"
-	LevelN1 Level = "N1"
+	LevelN5 Level = "n5"
+	LevelN4 Level = "n4"
+	LevelN3 Level = "n3"
+	LevelN2 Level = "n2"
+	LevelN1 Level = "n1"
+
+	WordTypeKeiyoushi = "keiyoushi"
+	WordTypeMeishi    = "meishi"
 )
 
 type Options struct {
@@ -70,5 +74,6 @@ type Question struct {
 	Question string    `json:"question"`
 	Meaning  string    `json:"meaning"`
 	Furigana string    `json:"furigana"`
+	Type     string    `json:"type"`
 	Options  []Options `json:"options"`
 }
