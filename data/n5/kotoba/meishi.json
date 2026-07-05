@@ -22,5 +22,233 @@
         "reading": "ふた.り",
         "meaning": "Dua Orang",
         "type": "meishi"
+    },
+    {
+        "word": "日",
+        "reading": "ひ",
+        "meaning": "hari,matahari",
+        "type": "meishi"
+    },
+    {
+        "word": "週",
+        "reading": "しゅう",
+        "meaning": "minggu",
+        "type": "meishi"
+    },
+    {
+        "word": "月",
+        "reading": "つき",
+        "meaning": "bulan",
+        "type": "meishi"
+    },
+    {
+        "word": "年",
+        "reading": "とし",
+        "meaning": "tahun, usia",
+        "type": "meishi"
+    },
+    {
+        "word": "~月",
+        "reading": "~がつ",
+        "meaning": "bulan ~",
+        "type": "meishi"
+    },
+    {
+        "word": "1月",
+        "reading": "いち.がつ",
+        "meaning": "Januari",
+        "type": "meishi"
+    },
+    {
+        "word": "2月",
+        "reading": "に.がつ",
+        "meaning": "Februari",
+        "type": "meishi"
+    },
+    {
+        "word": "3月",
+        "reading": "さん.がつ",
+        "meaning": "Maret",
+        "type": "meishi"
+    },
+    {
+        "word": "4月",
+        "reading": "し.がつ",
+        "meaning": "April",
+        "type": "meishi"
+    },
+    {
+        "word": "5月",
+        "reading": "ご.がつ",
+        "meaning": "Mei",
+        "type": "meishi"
+    },
+    {
+        "word": "6月",
+        "reading": "ろく.がつ",
+        "meaning": "Juni",
+        "type": "meishi"
+    },
+    {
+        "word": "7月",
+        "reading": "しち.がつ",
+        "meaning": "Juli",
+        "type": "meishi"
+    },
+    {
+        "word": "8月",
+        "reading": "はち.がつ",
+        "meaning": "Agustus",
+        "type": "meishi"
+    },
+    {
+        "word": "9月",
+        "reading": "く.がつ",
+        "meaning": "September",
+        "type": "meishi"
+    },
+    {
+        "word": "10月",
+        "reading": "じゅう.がつ",
+        "meaning": "Oktober",
+        "type": "meishi"
+    },
+    {
+        "word": "11月",
+        "reading": "じゅういち.がつ",
+        "meaning": "November",
+        "type": "meishi"
+    },
+    {
+        "word": "12月",
+        "reading": "じゅうに.がつ",
+        "meaning": "Desember",
+        "type": "meishi"
+    },
+    {
+        "word": "何月",
+        "reading": "なん.がつ",
+        "meaning": "bulan apa",
+        "type": "meishi"
+    },
+    {
+        "word": "一日",
+        "reading": "つい.たち",
+        "meaning": "tanggal satu",
+        "type": "meishi"
+    },
+    {
+        "word": "二日",
+        "reading": "ふつ.か",
+        "meaning": "tanggal dua",
+        "type": "meishi"
+    },
+    {
+        "word": "三日",
+        "reading": "みっ.か",
+        "meaning": "tanggal tiga",
+        "type": "meishi"
+    },
+    {
+        "word": "四日",
+        "reading": "よっ.か",
+        "meaning": "tanggal empat",
+        "type": "meishi"
+    },
+    {
+        "word": "五日",
+        "reading": "いつ.か",
+        "meaning": "tanggal lima",
+        "type": "meishi"
+    },
+    {
+        "word": "六日",
+        "reading": "むい.か",
+        "meaning": "tanggal enam",
+        "type": "meishi"
+    },
+    {
+        "word": "七日",
+        "reading": "なの.か",
+        "meaning": "tanggal tujuh",
+        "type": "meishi"
+    },
+    {
+        "word": "八日",
+        "reading": "よお.か",
+        "meaning": "tanggal delapan",
+        "type": "meishi"
+    },
+    {
+        "word": "九日",
+        "reading": "ここの.か",
+        "meaning": "tanggal sembilan",
+        "type": "meishi"
+    },
+    {
+        "word": "十日",
+        "reading": "とお.か",
+        "meaning": "tanggal sepuluh",
+        "type": "meishi"
+    },
+    {
+        "word": "二十日",
+        "reading": "はつ.か",
+        "meaning": "tanggal dua puluh",
+        "type": "meishi"
+    },
+    {
+        "word": "何日",
+        "reading": "なんに.ち",
+        "meaning": "tanggal berapa",
+        "type": "meishi"
+    },
+    {
+        "word": "曜日",
+        "reading": "よう.び",
+        "meaning": "hari (minggu)",
+        "type": "meishi"
+    },
+    {
+        "word": "月曜日",
+        "reading": "げつ.よう.び",
+        "meaning": "hari Senin",
+        "type": "meishi"
+    },
+    {
+        "word": "火曜日",
+        "reading": "か.よう.び",
+        "meaning": "hari Selasa",
+        "type": "meishi"
+    },
+    {
+        "word": "水曜日",
+        "reading": "すい.よう.び",
+        "meaning": "hari Rabu",
+        "type": "meishi"
+    },
+    {
+        "word": "木曜日",
+        "reading": "もく.よう.び",
+        "meaning": "hari Kamis",
+        "type": "meishi"
+    },
+    {
+        "word": "金曜日",
+        "reading": "きん.よう.び",
+        "meaning": "hari Jumat",
+        "type": "meishi"
+    },
+    {
+        "word": "土曜日",
+        "reading": "ど.よう.び",
+        "meaning": "hari Sabtu",
+        "type": "meishi"
+    },
+    {
+        "word": "日曜日",
+        "reading": "にち.よう.び",
+        "meaning": "hari Minggu",
+        "type": "meishi"
     }
 ]

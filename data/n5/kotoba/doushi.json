@@ -1,0 +1,134 @@
+[
+	{
+		"word": "会う",
+		"reading": "あ.う",
+		"meaning": "bertemu",
+		"type": "doushi"
+	},
+	{
+		"word": "洗う",
+		"reading": "あら.う",
+		"meaning": "mencuci",
+		"type": "doushi"
+	},
+	{
+		"word": "言う",
+		"reading": "い.う",
+		"meaning": "berkata",
+		"type": "doushi"
+	},
+	{
+		"word": "歌う",
+		"reading": "うた.う",
+		"meaning": "menyanyi",
+		"type": "doushi"
+	},
+	{
+		"word": "買う",
+		"reading": "か.う",
+		"meaning": "membeli",
+		"type": "doushi"
+	},
+	{
+		"word": "吸う",
+		"reading": "す.う",
+		"meaning": "mengisap",
+		"type": "doushi"
+	},
+	{
+		"word": "違う",
+		"reading": "ちが.う",
+		"meaning": "berbeda",
+		"type": "doushi"
+	},
+	{
+		"word": "使う",
+		"reading": "つか.う",
+		"meaning": "memakai",
+		"type": "doushi"
+	},
+	{
+		"word": "習う",
+		"reading": "なら.う",
+		"meaning": "belajar",
+		"type": "doushi"
+	},
+    {
+		"word": "終わる",
+		"reading": "お.わる",
+		"meaning": "selesai, berakhir",
+		"type": "doushi"
+	},
+	{
+		"word": "かかる",
+		"reading": "かかる",
+		"meaning": "memerlukan (waktu/biaya), tergantung, kena, dll",
+		"type": "doushi"
+	},
+	{
+		"word": "困る",
+		"reading": "こま.る",
+		"meaning": "mendapat masalah, bingung",
+		"type": "doushi"
+	},
+	{
+		"word": "閉まる",
+		"reading": "し.まる",
+		"meaning": "tertutup",
+		"type": "doushi"
+	},
+	{
+		"word": "座る",
+		"reading": "すわ.る",
+		"meaning": "duduk",
+		"type": "doushi"
+	},
+	{
+		"word": "止まる",
+		"reading": "と.まる",
+		"meaning": "berhenti",
+		"type": "doushi"
+	},
+	{
+		"word": "鳴る",
+		"reading": "な.る",
+		"meaning": "berbunyi, berdering",
+		"type": "doushi"
+	},
+	{
+		"word": "始まる",
+		"reading": "はじ.まる",
+		"meaning": "dimulai",
+		"type": "doushi"
+	},
+    {
+		"word": "張る/貼る",
+		"reading": "は.る",
+		"meaning": "menempel, memasang",
+		"type": "doushi"
+	},
+	{
+		"word": "曲がる ",
+		"reading": "ま.がる",
+		"meaning": "belok",
+		"type": "doushi"
+	},
+	{
+		"word": "やる",
+		"reading": "やる",
+		"meaning": "mengerjakan",
+		"type": "doushi"
+	},
+	{
+		"word": "わかる",
+		"reading": "わかる",
+		"meaning": "mengerti, mengetahui",
+		"type": "doushi"
+	},
+	{
+		"word": "渡る",
+		"reading": "わた.る",
+		"meaning": "menyeberang, diserahkan",
+		"type": "doushi"
+	}
+]
