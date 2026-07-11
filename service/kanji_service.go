@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"math/rand/v2"
 	"os"
+	"strconv"
 	"strings"
 
 	"benkyou/model"
@@ -45,7 +46,7 @@ func NewKanjiService(
 	}
 
 	return &Service{
-		Data:       data,
+		Data:     data,
 		Examples: exampleByLevel,
 	}, nil
 }
@@ -138,6 +139,20 @@ func (s *Service) GetQuestionByLevel(level string, wordType string) (model.Quest
 
 	question := pool[rand.IntN(len(pool))]
 
+	cfgRandomKanjiQuestionEnabled := os.Getenv("RANDOM_KANJI_QUESTION_ENABLED")
+	randomKanjiQuestionEnabled, err := strconv.ParseBool(cfgRandomKanjiQuestionEnabled)
+	if err != nil {
+		return model.Question{}, errors.New("fail parse random kanji question config")
+	}
+
+	if randomKanjiQuestionEnabled {
+		return s.randomKanjiQuestion(pool, question)
+	}
+
+	return s.getKanjiQuestion(pool, question)
+}
+
+func (s *Service) randomKanjiQuestion(pool []model.Examples, question model.Examples) (model.Question, error) {
 	rng := rand.IntN(2)
 	if rng < 1 {
 		return s.getMeaningQuestion(pool, question)
