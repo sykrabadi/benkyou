@@ -1,6 +1,7 @@
 package main
 
 import (
+	"context"
 	"log"
 	"os"
 	"strings"
@@ -10,6 +11,9 @@ import (
 )
 
 func main() {
+	ctx, cancel := context.WithCancel(context.Background())
+	defer cancel()
+
 	kanjiDir := os.Getenv("KANJI_DIR")
 	if kanjiDir == "" {
 		log.Fatal("empty kanji dir")
@@ -29,5 +33,5 @@ func main() {
 		log.Fatal("invalid http port format")
 	}
 
-	server.RunServer(kanjiSvc, httpPort)
+	server.RunServer(ctx, kanjiSvc, httpPort)
 }
