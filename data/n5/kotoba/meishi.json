@@ -250,5 +250,509 @@
         "reading": "にち.よう.び",
         "meaning": "hari Minggu",
         "type": "meishi"
-    }
+    },
+    {
+		"word": "何曜日",
+		"reading": "なん.よう.び",
+		"meaning": "hari apa dalam seminggu",
+		"type": "meishi"
+	},
+	{
+		"word": "週末",
+		"reading": "しゅう.まつ",
+		"meaning": "akhir pekan",
+		"type": "meishi"
+	},
+	{
+		"word": "~分間",
+		"reading": "~ふん/ぷん.かん",
+		"meaning": "selama ~ menit",
+		"type": "meishi"
+	},
+	{
+		"word": "~時間",
+		"reading": "~じ.かん",
+		"meaning": "selama ~ jam",
+		"type": "meishi"
+	},
+	{
+		"word": "~日間",
+		"reading": "~かかん/にち.かん",
+		"meaning": "selama ~ hari",
+		"type": "meishi"
+	},
+	{
+		"word": "~週間",
+		"reading": "~しゅう.かん",
+		"meaning": "selama ~ minggu",
+		"type": "meishi"
+	},
+	{
+		"word": "~ヶ月間",
+		"reading": "~かげつ.かん",
+		"meaning": "selama ~ bulan",
+		"type": "meishi"
+	},
+    {
+		"word": "~年間",
+		"reading": "~ねん.かん",
+		"meaning": "selama tahun",
+		"type": "meishi"
+	},
+	{
+		"word": "~秒",
+		"reading": "~びょう",
+		"meaning": "~ detik",
+		"type": "meishi"
+	},
+	{
+		"word": "~分",
+		"reading": "~ふん/ぷん",
+		"meaning": "~ menit",
+		"type": "meishi"
+	},
+	{
+		"word": "~時",
+		"reading": "~じ",
+		"meaning": "jam ~",
+		"type": "meishi"
+	},
+	{
+		"word": "~ヶ月",
+		"reading": "~かげつ",
+		"meaning": "~ bulan",
+		"type": "meishi"
+	},
+	{
+		"word": "~年",
+		"reading": "~ねん",
+		"meaning": "~ tahun",
+		"type": "meishi"
+	},
+	{
+		"word": "午前",
+		"reading": "ご.ぜん",
+		"meaning": "pagi hari (A.M)",
+		"type": "meishi"
+	},
+	{
+		"word": "午前中",
+		"reading": "ご.ぜん.ちゅう",
+		"meaning": "dalam pagi hari (A.M)",
+		"type": "meishi"
+	},
+    {
+		"word": "午後",
+		"reading": "ごご",
+		"meaning": "siang hari (P.M)",
+		"type": "meishi"
+	},
+	{
+		"word": "今日",
+		"reading": "きょう",
+		"meaning": "hari ini",
+		"type": "meishi"
+	},
+	{
+		"word": "明日",
+		"reading": "あす/あした",
+		"meaning": "besok",
+		"type": "meishi"
+	},
+	{
+		"word": "明後日",
+		"reading": "あさって",
+		"meaning": "lusa",
+		"type": "meishi"
+	},
+	{
+		"word": "昨日",
+		"reading": "き.のう",
+		"meaning": "kemarin",
+		"type": "meishi"
+	},
+	{
+		"word": "一昨日",
+		"reading": "お.とと.い",
+		"meaning": "dua hari yang lalu",
+		"type": "meishi"
+	},
+	{
+		"word": "今週",
+		"reading": "こん.しゅう",
+		"meaning": "minggu ini",
+		"type": "meishi"
+	},
+	{
+		"word": "来週",
+		"reading": "らい.しゅう",
+		"meaning": "minggu depan",
+		"type": "meishi"
+	},
+    {
+		"word": "再来週",
+		"reading": "さ.らい.しゅう",
+		"meaning": "dua minggu yg akan datang",
+		"type": "meishi"
+	},
+	{
+		"word": "先週",
+		"reading": "せん.しゅう",
+		"meaning": "minggu lalu",
+		"type": "meishi"
+	},
+	{
+		"word": "先々週",
+		"reading": "せん.せん.しゅう",
+		"meaning": "dua minggu yg lalu",
+		"type": "meishi"
+	},
+	{
+		"word": "今月",
+		"reading": "こん.げつ",
+		"meaning": "bulan ini",
+		"type": "meishi"
+	},
+	{
+		"word": "来月",
+		"reading": "らい.げつ",
+		"meaning": "bulan depan",
+		"type": "meishi"
+	},
+	{
+		"word": "再来月",
+		"reading": "さ.らい.げつ",
+		"meaning": "dua bulan yg akan datang",
+		"type": "meishi"
+	},
+	{
+		"word": "先月",
+		"reading": "せん.げつ",
+		"meaning": "bulan lalu",
+		"type": "meishi"
+	},
+	{
+		"word": "先々月",
+		"reading": "せん.せん.げつ",
+		"meaning": "dua bulan yg lalu",
+		"type": "meishi"
+	},
+    {
+		"word": "今年",
+		"reading": "こ.とし",
+		"meaning": "tahun ini",
+		"type": "meishi"
+	},
+	{
+		"word": "来年",
+		"reading": "らい.ねん",
+		"meaning": "tahun ini",
+		"type": "meishi"
+	},
+	{
+		"word": "再来年",
+		"reading": "さ.らい.ねん",
+		"meaning": "dua tahun yang akan datang",
+		"type": "meishi"
+	},
+	{
+		"word": "去年",
+		"reading": "きょ.ねん",
+		"meaning": "tahun lalu",
+		"type": "meishi"
+	},
+	{
+		"word": "一昨年",
+		"reading": "お.と.とし",
+		"meaning": "dua tahun yang lalu",
+		"type": "meishi"
+	},
+	{
+		"word": "朝",
+		"reading": "あさ",
+		"meaning": "pagi",
+		"type": "meishi"
+	},
+	{
+		"word": "昼",
+		"reading": "ひる",
+		"meaning": "siang",
+		"type": "meishi"
+	},
+	{
+		"word": "晚",
+		"reading": "ばん",
+		"meaning": "malam",
+		"type": "meishi"
+	},
+	{
+		"word": "夕方",
+		"reading": "ゆう.がた",
+		"meaning": "sore",
+		"type": "meishi"
+	},
+    {
+		"word": "夜",
+		"reading": "よる",
+		"meaning": "malam",
+		"type": "meishi"
+	},
+	{
+		"word": "今朝",
+		"reading": "け.さ",
+		"meaning": "pagi ini",
+		"type": "meishi"
+	},
+	{
+		"word": "今晚",
+		"reading": "こん.ばん",
+		"meaning": "malam ini",
+		"type": "meishi"
+	},
+	{
+		"word": "今夜",
+		"reading": "こん.や",
+		"meaning": "malam ini",
+		"type": "meishi"
+	},
+	{
+		"word": "タベ",
+		"reading": "ゆう.べ",
+		"meaning": "kemarin malam, petang hari",
+		"type": "meishi"
+	},
+	{
+		"word": "昨夜",
+		"reading": "さ.くや",
+		"meaning": "kemarin malam",
+		"type": "meishi"
+	},
+	{
+		"word": "今",
+		"reading": "いま",
+		"meaning": "sekarang",
+		"type": "meishi"
+	},
+	{
+		"word": "次",
+		"reading": "つぎ",
+		"meaning": "selanjutnya, berikutnya",
+		"type": "meishi"
+	},
+	{
+		"word": "毎~",
+		"reading": "まい~",
+		"meaning": "setiap ~",
+		"type": "meishi"
+	},
+    {
+		"word": "季節",
+		"reading": "き.せつ",
+		"meaning": "musim",
+		"type": "meishi"
+	},
+	{
+		"word": "春",
+		"reading": "はる",
+		"meaning": "musim semi",
+		"type": "meishi"
+	},
+	{
+		"word": "夏",
+		"reading": "なつ",
+		"meaning": "musim panas",
+		"type": "meishi"
+	},
+	{
+		"word": "秋",
+		"reading": "あき",
+		"meaning": "musim gugur",
+		"type": "meishi"
+	},
+	{
+		"word": "冬",
+		"reading": "ふゆ",
+		"meaning": "musim dingin",
+		"type": "meishi"
+	},
+	{
+		"word": "夏休み",
+		"reading": "なつ.やす.み",
+		"meaning": "libur musim panas",
+		"type": "meishi"
+	},
+	{
+		"word": "春休み",
+		"reading": "はる.やす.み",
+		"meaning": "libur musim semi",
+		"type": "meishi"
+	},
+	{
+		"word": "冬休み",
+		"reading": "ふゆ.やす.み",
+		"meaning": "libur musim dingin",
+		"type": "meishi"
+	},
+    {
+		"word": "毎朝",
+		"reading": "まい.あさ",
+		"meaning": "setiap pagi",
+		"type": "meishi"
+	},
+	{
+		"word": "毎日",
+		"reading": "まい.にち",
+		"meaning": "setiap hari",
+		"type": "meishi"
+	},
+	{
+		"word": "每晚",
+		"reading": "まい.ばん",
+		"meaning": "setiap malam",
+		"type": "meishi"
+	},
+	{
+		"word": "毎週",
+		"reading": "まい.しゅう",
+		"meaning": "setiap minggu",
+		"type": "meishi"
+	},
+	{
+		"word": "毎月",
+		"reading": "まい.つき",
+		"meaning": "setiap bulan",
+		"type": "meishi"
+	},
+	{
+		"word": "毎年",
+		"reading": "まい.とし",
+		"meaning": "setiap tahun",
+		"type": "meishi"
+	},
+    {
+		"word": "山",
+		"reading": "やま",
+		"meaning": "gunung",
+		"type": "meishi"
+	},
+	{
+		"word": "川",
+		"reading": "かわ",
+		"meaning": "sungai",
+		"type": "meishi"
+	},
+	{
+		"word": "海",
+		"reading": "うみ",
+		"meaning": "laut",
+		"type": "meishi"
+	},
+	{
+		"word": "池",
+		"reading": "いけ",
+		"meaning": "kolam",
+		"type": "meishi"
+	},
+	{
+		"word": "空",
+		"reading": "そら",
+		"meaning": "langit",
+		"type": "meishi"
+	},
+	{
+		"word": "雲",
+		"reading": "くも",
+		"meaning": "awan",
+		"type": "meishi"
+	},
+	{
+		"word": "太陽",
+		"reading": "たい.よう",
+		"meaning": "matahari",
+		"type": "meishi"
+	},
+	{
+		"word": "月",
+		"reading": "つき",
+		"meaning": "bulan",
+		"type": "meishi"
+	},
+	{
+		"word": "星",
+		"reading": "ほし",
+		"meaning": "bintang",
+		"type": "meishi"
+	},
+    {
+		"word": "石",
+		"reading": "いし",
+		"meaning": "batu",
+		"type": "meishi"
+	},
+	{
+		"word": "砂",
+		"reading": "すな",
+		"meaning": "pasir",
+		"type": "meishi"
+	},
+	{
+		"word": "金",
+		"reading": "きん",
+		"meaning": "emas",
+		"type": "meishi"
+	},
+	{
+		"word": "火",
+		"reading": "ひ",
+		"meaning": "api",
+		"type": "meishi"
+	},
+	{
+		"word": "木",
+		"reading": "き",
+		"meaning": "kayu",
+		"type": "meishi"
+	},
+	{
+		"word": "緑",
+		"reading": "みどり",
+		"meaning": "hijau, alam khususnya tumbuh-tumbuhan",
+		"type": "meishi"
+	},
+	{
+		"word": "天気",
+		"reading": "てん.き",
+		"meaning": "cuaca",
+		"type": "meishi"
+	},
+	{
+		"word": "晴れ",
+		"reading": "は.れ",
+		"meaning": "cerah",
+		"type": "meishi"
+	},
+    {
+		"word": "雨",
+		"reading": "あめ",
+		"meaning": "hujan",
+		"type": "meishi"
+	},
+	{
+		"word": "曇り",
+		"reading": "くも.り",
+		"meaning": "mendung",
+		"type": "meishi"
+	},
+	{
+		"word": "雪",
+		"reading": "ゆき",
+		"meaning": "salju",
+		"type": "meishi"
+	},
+	{
+		"word": "風",
+		"reading": "かぜ",
+		"meaning": "angin",
+		"type": "meishi"
+	}
 ]
