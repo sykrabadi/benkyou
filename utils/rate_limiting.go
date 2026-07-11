@@ -2,14 +2,15 @@ package utils
 
 import (
 	"context"
-	"fmt"
 	"sync"
 	"time"
 )
 
-const defaulBucketSize = 20
-const refreshBucketSize = 5
-const defaultTickInterval = 500
+const (
+	defaulBucketSize    = 20
+	refreshBucketSize   = 5
+	defaultTickInterval = 500 * time.Millisecond
+)
 
 type Limiter struct {
 	bucketSize        int
@@ -27,7 +28,7 @@ func NewLimiter(ctx context.Context, bucketSize int, interval time.Duration) *Li
 		bucketSize = defaulBucketSize
 	}
 
-	if interval == 0{
+	if interval == 0 {
 		interval = defaultTickInterval
 	}
 
@@ -49,31 +50,28 @@ func (limiter *Limiter) Stop() {
 }
 
 func (limiter *Limiter) refreshBucket(ctx context.Context) {
-	go func() {
-		ticker := time.NewTicker(limiter.interval)
-		defer ticker.Stop()
-		for {
-			select {
-			case <-ctx.Done():
-				fmt.Println("release all")
-				return
-			case <-ticker.C:
-				// add mutex, because CurrentBucketSize access
-				// is shared among decrementBucket and GetBucketSize
-				limiter.mu.Lock()
-				if limiter.currentBucketSize < limiter.bucketSize {
-					currentTickingSize := limiter.currentBucketSize + refreshBucketSize
+	ticker := time.NewTicker(limiter.interval)
+	defer ticker.Stop()
+	for {
+		select {
+		case <-ctx.Done():
+			return
+		case <-ticker.C:
+			// add mutex, because CurrentBucketSize access
+			// is shared among decrementBucket and GetBucketSize
+			limiter.mu.Lock()
+			if limiter.currentBucketSize < limiter.bucketSize {
+				currentTickingSize := limiter.currentBucketSize + refreshBucketSize
 
-					if currentTickingSize > limiter.bucketSize {
-						limiter.currentBucketSize = limiter.bucketSize
-					} else {
-						limiter.currentBucketSize = currentTickingSize
-					}
+				if currentTickingSize > limiter.bucketSize {
+					limiter.currentBucketSize = limiter.bucketSize
+				} else {
+					limiter.currentBucketSize = currentTickingSize
 				}
-				limiter.mu.Unlock()
 			}
+			limiter.mu.Unlock()
 		}
-	}()
+	}
 }
 
 func (limiter *Limiter) decrementBucket() {
@@ -90,4 +88,14 @@ func (limiter *Limiter) GetBucketSize() int {
 	limiter.mu.Lock()
 	defer limiter.mu.Unlock()
 	return limiter.currentBucketSize
+}
+
+func (limiter *Limiter) Allow() bool {
+	limiter.mu.Lock()
+	defer limiter.mu.Unlock()
+	if limiter.currentBucketSize <= 0 {
+		return false
+	}
+	limiter.currentBucketSize--
+	return true
 }
