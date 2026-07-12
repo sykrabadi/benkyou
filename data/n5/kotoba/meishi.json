@@ -754,5 +754,131 @@
 		"reading": "かぜ",
 		"meaning": "angin",
 		"type": "meishi"
+	},
+	{
+		"word": "上",
+		"reading": "うえ",
+		"meaning": "atas",
+		"type": "meishi"
+	},
+	{
+		"word": "下",
+		"reading": "した",
+		"meaning": "bawah",
+		"type": "meishi"
+	},
+	{
+		"word": "前",
+		"reading": "まえ",
+		"meaning": "depan",
+		"type": "meishi"
+	},
+	{
+		"word": "後ろ",
+		"reading": "うし.ろ",
+		"meaning": "belakang",
+		"type": "meishi"
+	},
+	{
+		"word": "側",
+		"reading": "そば",
+		"meaning": "samping, dekat",
+		"type": "meishi"
+	},
+	{
+		"word": "近く",
+		"reading": "ちか.く",
+		"meaning": "dekat",
+		"type": "meishi"
+	},
+	{
+		"word": "となり",
+		"reading": "となり",
+		"meaning": "sebelah",
+		"type": "meishi"
+	},
+	{
+		"word": "横",
+		"reading": "よこ",
+		"meaning": "samping",
+		"type": "meishi"
+	},
+	{
+		"word": "右",
+		"reading": "みぎ",
+		"meaning": "kanan",
+		"type": "meishi"
+	},
+	{
+		"word": "左",
+		"reading": "ひだり",
+		"meaning": "kiri",
+		"type": "meishi"
+	},
+	{
+		"word": "中",
+		"reading": "なか",
+		"meaning": "dalam",
+		"type": "meishi"
+	},
+	{
+		"word": "外",
+		"reading": "そと",
+		"meaning": "luar",
+		"type": "meishi"
+	},
+	{
+		"word": "先",
+		"reading": "さき",
+		"meaning": "depan, ujung",
+		"type": "meishi"
+	},
+	{
+		"word": "東",
+		"reading": "ひがし",
+		"meaning": "timur",
+		"type": "meishi"
+	},
+	{
+		"word": "西",
+		"reading": "にし",
+		"meaning": "barat",
+		"type": "meishi"
+	},
+	{
+		"word": "南",
+		"reading": "みなみ",
+		"meaning": "selatan",
+		"type": "meishi"
+	},
+	{
+		"word": "北",
+		"reading": "きた",
+		"meaning": "utara",
+		"type": "meishi"
+	},
+	{
+		"word": "~側",
+		"reading": "~がわ",
+		"meaning": "sebelah ~",
+		"type": "meishi"
+	},
+	{
+		"word": "所",
+		"reading": "ところ",
+		"meaning": "tempat",
+		"type": "meishi"
+	},
+	{
+		"word": "むこう",
+		"reading": "むこう",
+		"meaning": "seberang, sebelah sana",
+		"type": "meishi"
+	},
+	{
+		"word": "他",
+		"reading": "ほか",
+		"meaning": "lain",
+		"type": "meishi"
 	}
 ]
