@@ -880,5 +880,107 @@
 		"reading": "ほか",
 		"meaning": "lain",
 		"type": "meishi"
+	},
+	{
+		"word": "体",
+		"reading": "からだ",
+		"meaning": "tubuh",
+		"type": "meishi"
+	},
+	{
+		"word": "頭",
+		"reading": "あたま",
+		"meaning": "kepala",
+		"type": "meishi"
+	},
+	{
+		"word": "顏",
+		"reading": "かお",
+		"meaning": "muka",
+		"type": "meishi"
+	},
+	{
+		"word": "目",
+		"reading": "め",
+		"meaning": "mata",
+		"type": "meishi"
+	},
+	{
+		"word": "鼻",
+		"reading": "はな",
+		"meaning": "hidung",
+		"type": "meishi"
+	},
+	{
+		"word": "耳",
+		"reading": "みみ",
+		"meaning": "telinga",
+		"type": "meishi"
+	},
+	{
+		"word": "口",
+		"reading": "くち",
+		"meaning": "mulut",
+		"type": "meishi"
+	},
+	{
+		"word": "歯",
+		"reading": "は",
+		"meaning": "gigi",
+		"type": "meishi"
+	},
+	{
+		"word": "手",
+		"reading": "て",
+		"meaning": "tangan",
+		"type": "meishi"
+	},
+	{
+		"word": "足",
+		"reading": "あし",
+		"meaning": "kaki",
+		"type": "meishi"
+	},
+	{
+		"word": "お腹",
+		"reading": "お.なか",
+		"meaning": "perut",
+		"type": "meishi"
+	},
+	{
+		"word": "背",
+		"reading": "せ",
+		"meaning": "punggung",
+		"type": "meishi"
+	},
+	{
+		"word": "病気",
+		"reading": "びょう.き",
+		"meaning": "penyakit",
+		"type": "meishi"
+	},
+	{
+		"word": "風邪",
+		"reading": "か.ぜ",
+		"meaning": "flu, masuk angin",
+		"type": "meishi"
+	},
+	{
+		"word": "薬",
+		"reading": "くすり",
+		"meaning": "obat",
+		"type": "meishi"
+	},
+	{
+		"word": "元気",
+		"reading": "げん.き",
+		"meaning": "sehat, semangat",
+		"type": "meishi"
+	},
+	{
+		"word": "声",
+		"reading": "こえ",
+		"meaning": "suara",
+		"type": "meishi"
 	}
 ]
