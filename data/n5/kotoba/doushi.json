@@ -130,5 +130,293 @@
 		"reading": "わた.る",
 		"meaning": "menyeberang, diserahkan",
 		"type": "doushi"
+	},
+	{
+		"word": "泳ぐ",
+		"reading": "およ.ぐ",
+		"meaning": "berenang",
+		"type": "doushi"
+	},
+	{
+		"word": "脱ぐ",
+		"reading": "ぬ.ぐ",
+		"meaning": "melepas",
+		"type": "doushi"
+	},
+	{
+		"word": "要る",
+		"reading": "い.る",
+		"meaning": "memerlukan",
+		"type": "doushi"
+	},
+	{
+		"word": "帰る",
+		"reading": "かえ.る",
+		"meaning": "pulang",
+		"type": "doushi"
+	},
+	{
+		"word": "切る",
+		"reading": "き.る",
+		"meaning": "memotong",
+		"type": "doushi"
+	},
+	{
+		"word": "知る",
+		"reading": "し.る",
+		"meaning": "mengetahui",
+		"type": "doushi"
+	},
+	{
+		"word": "入る",
+		"reading": "はい.る",
+		"meaning": "masuk",
+		"type": "doushi"
+	},
+	{
+		"word": "走る",
+		"reading": "はし.る",
+		"meaning": "berlari",
+		"type": "doushi"
+	},
+{
+		"word": "浴びる",
+		"reading": "あ.びる",
+		"meaning": "mandi",
+		"type": "doushi"
+	},
+	{
+		"word": "起きる",
+		"reading": "お.きる",
+		"meaning": "bangun (dari tidur)",
+		"type": "doushi"
+	},
+	{
+		"word": "下りる/降りる",
+		"reading": "おり.る",
+		"meaning": "turun, keluar",
+		"type": "doushi"
+	},
+	{
+		"word": "借りる",
+		"reading": "か.りる",
+		"meaning": "meminjam",
+		"type": "doushi"
+	},
+	{
+		"word": "着る",
+		"reading": "き.る",
+		"meaning": "memakai (baju)",
+		"type": "doushi"
+	},
+	{
+		"word": "できる",
+		"reading": "できる",
+		"meaning": "bisa, mampu ,jadi, dibangun, selesai",
+		"type": "doushi"
+	},
+	{
+		"word": "見る",
+		"reading": "み.る",
+		"meaning": "melihat",
+		"type": "doushi"
+	},
+	{
+		"word": "開ける",
+		"reading": "あ.ける",
+		"meaning": "membuka",
+		"type": "doushi"
+	},
+	{
+		"word": "あげる",
+		"reading": "あげる",
+		"meaning": "memberi",
+		"type": "doushi"
+	},
+	{
+		"word": "入れる",
+		"reading": "い.れる",
+		"meaning": "memasukkan",
+		"type": "doushi"
+	},
+	{
+		"word": "生まれる",
+		"reading": "う.まれる",
+		"meaning": "lahir",
+		"type": "doushi"
+	},
+	{
+		"word": "教える",
+		"reading": "おし.える",
+		"meaning": "mengajar",
+		"type": "doushi"
+	},
+	{
+		"word": "覚える",
+		"reading": "おぼ.える",
+		"meaning": "menghafal, merasa",
+		"type": "doushi"
+	},
+	{
+		"word": "掛ける",
+		"reading": "か.ける",
+		"meaning": "memakai (kaca mata)",
+		"type": "doushi"
+	},
+	{
+		"word": "消える",
+		"reading": "き.える",
+		"meaning": "padam, lenyap",
+		"type": "doushi"
+	},
+	{
+		"word": "答える",
+		"reading": "こた.える",
+		"meaning": "menjawab",
+		"type": "doushi"
+	},
+	{
+		"word": "閉める",
+		"reading": "し.める",
+		"meaning": "menutup",
+		"type": "doushi"
+	},
+	{
+		"word": "食べる",
+		"reading": "た.べる",
+		"meaning": "makan",
+		"type": "doushi"
+	},
+	{
+		"word": "疲れる",
+		"reading": "つか.れる",
+		"meaning": "capek, lelah",
+		"type": "doushi"
+	},
+	{
+		"word": "勤める/務める",
+		"reading": "つと.める",
+		"meaning": "bekerja",
+		"type": "doushi"
+	},
+	{
+		"word": "出かける",
+		"reading": "で.かける",
+		"meaning": "pergi keluar",
+		"type": "doushi"
+	},
+	{
+		"word": "出る",
+		"reading": "で.る",
+		"meaning": "keluar",
+		"type": "doushi"
+	},
+	{
+		"word": "電気をつける",
+		"reading": "で.んき.をつける",
+		"meaning": "menyalakan listrik",
+		"type": "doushi"
+	},
+	{
+		"word": "電話をかける",
+		"reading": "で.んわ.をかける",
+		"meaning": "menelepon",
+		"type": "doushi"
+	},
+	{
+		"word": "並べる",
+		"reading": "なら.べる",
+		"meaning": "menjejerkan",
+		"type": "doushi"
+	},
+	{
+		"word": "寝る",
+		"reading": "ね.る",
+		"meaning": "tidur",
+		"type": "doushi"
+	},
+	{
+		"word": "晴れる",
+		"reading": "は.れる",
+		"meaning": "cerah",
+		"type": "doushi"
+	},
+	{
+		"word": "見せる",
+		"reading": "み.せる",
+		"meaning": "memperlihatkan",
+		"type": "doushi"
+	},
+	{
+		"word": "忘れる",
+		"reading": "わす.れる",
+		"meaning": "lupa",
+		"type": "doushi"
+	},
+	{
+		"word": "来る",
+		"reading": "く.る",
+		"meaning": "datang",
+		"type": "doushi"
+	},
+	{
+		"word": "する",
+		"reading": "する",
+		"meaning": "melakukan",
+		"type": "doushi"
+	},
+	{
+		"word": "結婚する",
+		"reading": "けっこん.する",
+		"meaning": "menikah",
+		"type": "doushi"
+	},
+	{
+		"word": "コピーする",
+		"reading": "コピーする",
+		"meaning": "memfotokopi",
+		"type": "doushi"
+	},
+	{
+		"word": "質問する",
+		"reading": "しつ.もん.する",
+		"meaning": "bertanya, menanyakan",
+		"type": "doushi"
+	},
+	{
+		"word": "洗濯する",
+		"reading": "せん.たく.する",
+		"meaning": "mencuci",
+		"type": "doushi"
+	},
+	{
+		"word": "掃除する",
+		"reading": "そうじ.する",
+		"meaning": "membersihkan, bersih-bersih",
+		"type": "doushi"
+	},
+	{
+		"word": "遅刻する",
+		"reading": "ちこく.する",
+		"meaning": "terlambat",
+		"type": "doushi"
+	},
+	{
+		"word": "勉強する",
+		"reading": "べんきょう.する",
+		"meaning": "belajar",
+		"type": "doushi"
+	},
+	{
+		"word": "料理する",
+		"reading": "りょうり.する",
+		"meaning": "masak",
+		"type": "doushi"
+	},
+	{
+		"word": "練習する",
+		"reading": "れんしゅう.する",
+		"meaning": "berlatih, melakukan latihan",
+		"type": "doushi"
 	}
 ]
